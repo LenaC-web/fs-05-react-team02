@@ -1,0 +1,120 @@
+.layout {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.cellphone-out-box {
+  display: flex;
+  flex-direction: column;
+  width: 341px;
+  height: 540px;
+  background-color: #2f2f41;
+  border-radius: 20px;
+  padding: 30px 20px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.speaker-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.speaker {
+  width: 52px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #6e6e7b;
+}
+.camera {
+  width: 8px;
+  height: 8px;
+  border-radius: 20px;
+  background-color: #6e6e7b;
+}
+
+.cellphone-in-box {
+  display: flex;
+  width: 265px;
+  height: 100%;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: auto;
+  gap: 10px;
+}
+
+.message-box {
+  display: flex;
+  width: 100%;
+}
+
+.message-box-send,
+.message-box-receive {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.message-box-receive {
+  justify-content: flex-start;
+}
+
+.message,
+.message-recieve {
+  padding: 14px 21px 14px 21px;
+  border-radius: 15px 15px 0px 15px;
+  background-color: #2f2f41;
+  color: white;
+  margin: 0;
+}
+.message-recieve {
+  padding: 14px 21px 14px 21px;
+  border-radius: 15px 15px 15px 0px;
+  border: 0.5px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #d5d5d9;
+  color: black;
+}
+.input-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.input-box > input {
+  width: 60%;
+  border-radius: 20px;
+  padding: 7px 20px;
+}
+.input-box > button {
+  padding: 8px 10px;
+  border-radius: 20px;
+  background-color: #2f2f41;
+  color: #ffff;
+}
+.text-box {
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+.title-text {
+  color: #5f52ff;
+}
+.description-text {
+  color: black;
+}
+.footer-text {
+  color: #6e6e7b;
+}
