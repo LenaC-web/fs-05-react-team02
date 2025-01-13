@@ -52,17 +52,21 @@ export function Chat({ chatVisible, setChatVisible }) {
       <div className="chatBox">
         <div className="chatHeader">
           <div className={typoStyles.text4xlMedium}>비밀채팅방</div>
-          <button className={typoStyles.text4xlBold} onClick={handleCloseChat}>
+          <div
+            className={typoStyles.text4xlBold}
+            id="chatHeaderCLose"
+            onClick={handleCloseChat}
+          >
             x
-          </button>
+          </div>
         </div>
         <div className="chattingBox">
           {chatHistory.map((chat, index) => (
             <div key={index} className="chatBubbleBox">
-              <div id="chatBubble" className={typoStyles.text4xlMedium}>
+              <div id="chatBubble" className={typoStyles.text2xlMedium}>
                 {chat.text}
               </div>
-              <div className={typoStyles.text3xlMedium}>{chat.time}</div>
+              <div className={typoStyles.text2xlMedium}>{chat.time}</div>
             </div>
           ))}
         </div>
@@ -73,12 +77,12 @@ export function Chat({ chatVisible, setChatVisible }) {
             onChange={handleInputChange}
             id="chatInput"
             type="text"
-            className={typoStyles.text4xlMedium}
+            className={typoStyles.text3xlMedium}
           />
           <button
             onClick={saveUserText}
             id="chatInputButton"
-            className={typoStyles.text4xlSemibold}
+            className={typoStyles.text3xlSemibold}
           >
             보내기
           </button>

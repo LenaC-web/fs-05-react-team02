@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Typo, typoStyles } from "../../../../../utils/Typo/Typo.jsx";
 import "./chatRoom.css";
 export function ChatRoom() {
-  const [chatVisible, setChatVisible] = useState(true); // 채팅창 보이기/숨기기
+  const [chatVisible, setChatVisible] = useState(false); // 채팅창 보이기/숨기기
 
   const handleChatButtonClick = () => {
     setChatVisible(true);

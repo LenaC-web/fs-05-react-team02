@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import "../../../styles/color.css";
 
 const Container = {
+  position: "fixed",
+  bottom: "20px",
+  right: "20px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
   width: "300px",
-  minHeight: "200px",
+  minHeight: "120px",
   backgroundColor: "var(--gray900)",
   borderRadius: "10px",
   boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
   padding: "20px",
   gap: "15px",
+  zIndex: 1000,
 };
 
 const Title = {
@@ -64,10 +68,10 @@ const StatusMessage = (success) => ({
 function DiscordSend() {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
-  const [isCooldown, setIsCooldown] = useState(false); // 쿨타임 상태 추가
+  const [isCooldown, setIsCooldown] = useState(false);
 
   const MAX_LENGTH = 100;
-  const COOLDOWN_TIME = 3000; // 쿨타임 3초
+  const COOLDOWN_TIME = 3000;
 
   const sendMessage = async () => {
     if (isCooldown) {
@@ -91,8 +95,8 @@ function DiscordSend() {
       });
       setStatus("✅ 메시지가 성공적으로 전송되었습니다!");
       setMessage("");
-      setIsCooldown(true); // 🔥 쿨타임 시작
-      setTimeout(() => setIsCooldown(false), COOLDOWN_TIME); // 🔥 쿨타임 해제
+      setIsCooldown(true);
+      setTimeout(() => setIsCooldown(false), COOLDOWN_TIME);
     } catch (error) {
       console.error("전송 실패:", error);
       setStatus("❌ 메시지 전송에 실패했습니다.");
@@ -110,10 +114,9 @@ function DiscordSend() {
           onChange={(e) => setMessage(e.target.value)}
           maxLength={MAX_LENGTH}
           style={Input}
-          // disabled={isCooldown} // 🔥 쿨타임 동안 입력 비활성화
         />
         <button style={Button} onClick={sendMessage} disabled={isCooldown}>
-          {isCooldown ? "대기 중..." : "전송"} {/* 🔥 버튼 상태 변경 */}
+          {isCooldown ? "대기 중..." : "전송"}
         </button>
       </div>
       {status && <p style={StatusMessage(status.includes("성공"))}>{status}</p>}
