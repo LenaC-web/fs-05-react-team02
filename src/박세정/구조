@@ -1,7 +1,0 @@
-Sejeong.jsx
-  |
-  PokemonCardsContainer.jsx
-    |
-    PokemonCard.jsx
-      ├──PokemonImageGet.jsx
-      └──PokemonGet.jsx

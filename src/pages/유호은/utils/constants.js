@@ -46,3 +46,10 @@ export const PROFILE_TEXT = {
   answerCount: "질문에 답한 수",
   commentCount: "댓글 단 수",
 };
+
+export const CHECK_BOX_LIST = [
+  "NEXT.JS 공부하기",
+  "TYPESCRIPT도 공부하자",
+  "tailwind 빨리 써보기~",
+  "창의력을 기르자",
+];
