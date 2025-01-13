@@ -4,12 +4,16 @@ import "./Typo.css";
  * 텍스트 스타일
  * textSizeWeight: "text-[size] [weight]"
  *
- * size 옵션: 3xl, 2xl, xl, 2lg, lg, md, sm, xs
+ * size 옵션: 4xl, 3xl, 2xl, xl, 2lg, lg, md, sm, xs
  * weight 옵션: bold, semibold, medium, regular
  */
 export const typoStyles = {
+  text4xlBold: "text-4xl bold" /* 여기 추가 했습니다 */,
+  text4xlSemibold: "text-4xl semibold" /* 여기 추가 했습니다 */,
+  text4xlMedium: "text-4xl medium" /* 여기 추가 했습니다 */,
   text3xlBold: "text-3xl bold",
   text3xlSemibold: "text-3xl semibold",
+  text3xlMedium: "text-3xl Medium" /* 여기 추가 했습니다 */,
   text2xlBold: "text-2xl bold",
   text2xlSemibold: "text-2xl semibold",
   text2xlMedium: "text-2xl medium",
