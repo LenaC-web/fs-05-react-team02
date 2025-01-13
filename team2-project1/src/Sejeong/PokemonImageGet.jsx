@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import "./Sejeong.css";
 
 export function PokemonImageGet({ pokemonId = 413 }) {
   const [pokemonImage, setPokemonImage] = useState(null);
@@ -30,6 +31,7 @@ export function PokemonImageGet({ pokemonId = 413 }) {
       {pokemonImage ? (
         <img
           id="pokemonImage"
+          className="animationPokemon"
           src={pokemonImage}
           alt={`Pokemon ${pokemonId}`}
         />
