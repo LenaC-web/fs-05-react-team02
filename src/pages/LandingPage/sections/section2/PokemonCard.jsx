@@ -1,7 +1,7 @@
 import { PokemonGet } from "./PokemonGet";
 import { PokemonImageGet } from "./PokemonImageGet";
 import "./Sejeong.css";
-import { typoStyles } from "../../team2-project1/src/Typo/Typo";
+import { typoStyles } from "../../../../utils/Typo/Typo";
 
 export function PokemonCard({ pokemonId }) {
   return (

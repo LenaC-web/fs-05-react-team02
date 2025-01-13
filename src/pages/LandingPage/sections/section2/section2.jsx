@@ -1,8 +1,8 @@
 import { PokemonCardsContainer } from "./PokemonCardsContainer";
 import "./Sejeong.css";
-import { typoStyles } from "../../team2-project1/src/Typo/Typo";
+import { typoStyles } from "../../../../utils/Typo/Typo";
 
-function Sejeong() {
+export function Section2() {
   return (
     <div id="SejeongWrapper">
       <div id="SejeongSmallTitle" className={typoStyles.textXlBold}>
@@ -15,5 +15,3 @@ function Sejeong() {
     </div>
   );
 }
-
-export default Sejeong;

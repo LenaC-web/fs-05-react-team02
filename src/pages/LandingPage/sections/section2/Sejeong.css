@@ -1,4 +1,4 @@
-@import "../color.css";
+@import "../../../../styles/color.css";
 /*다른 팀원들 css에 따라 SejeongWrapper에 padding 추가*/
 #SejeongWrapper {
   width: 100%;

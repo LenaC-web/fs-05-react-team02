@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { PokemonCard } from "./PokemonCard";
 import "./Sejeong.css";
-import { typoStyles } from "../../team2-project1/src/Typo/Typo";
+import { typoStyles } from "../../../../utils/Typo/Typo";
 
 export function PokemonCardsContainer() {
   const [peopleData, setPeopleData] = useState([

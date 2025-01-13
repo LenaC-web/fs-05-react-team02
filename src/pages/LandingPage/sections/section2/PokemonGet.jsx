@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { typoStyles } from "../../team2-project1/src/Typo/Typo";
+import { typoStyles } from "../../../../utils/Typo/Typo";
 // 포켓몬 속성(타입)별 svg파일
 import BugIcon from "./PokemonType/bug.svg";
 import DarkIcon from "./PokemonType/dark.svg";
