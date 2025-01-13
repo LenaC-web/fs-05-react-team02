@@ -2,11 +2,7 @@ import "./App.css";
 import Sejeong from "./Sejeong/Sejeong";
 
 function App() {
-  return (
-    <>
-      <Sejeong />
-    </>
-  );
+  return <></>;
 }
 
 export default App;
