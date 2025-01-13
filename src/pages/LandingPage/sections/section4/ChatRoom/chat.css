@@ -1,0 +1,111 @@
+@import "../../../../../styles/color.css";
+
+#chat {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  /* 이건 불투명도 여서 color.css 안썼습니다 */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.chatBox {
+  width: 70%;
+  height: 65%;
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* 채팅헤더 시작 */
+
+.chatHeader {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: var(--blue300);
+}
+
+.chatHeader button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  background-color: var(--blue300);
+}
+
+/* 채팅박스 시작 */
+
+.chattingBox {
+  width: 100%;
+  height: 83%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 20px;
+  background-color: var(--blue300);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: scroll;
+  border: none;
+}
+.chatBubbleBox {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#chatBubble {
+  max-width: 80%;
+  display: inline-block;
+  /* background-color: #ffffff; */
+  background-color: var(--gray300);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* 인풋박스 시작 */
+
+.chatInputBox {
+  width: 100%;
+  height: 10%;
+  bottom: 19%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+#chatInput {
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+  padding-block: 0px;
+  padding-inline: 0px;
+  box-sizing: border-box;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+#chatInputButton {
+  position: relative;
+  top: 0px;
+  width: 20%;
+  height: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--gray500);
+}
