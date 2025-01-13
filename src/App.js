@@ -1,7 +1,12 @@
 import "./App.css";
+import Sejeong from "./Sejeong/Sejeong";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Sejeong />
+    </>
+  );
 }
 
 export default App;
