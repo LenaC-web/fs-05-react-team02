@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Typo, typoStyles } from "../Typo/Typo";
+import { Typo, typoStyles } from "../../../../utils/Typo/Typo";
 
 export function MemberCard({ img, name, comment, mbti, page }) {
   const memberNameClassName = `member-name ${typoStyles.text2xlBold}`;

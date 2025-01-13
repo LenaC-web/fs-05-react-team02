@@ -1,5 +1,5 @@
 import "./section3.css";
-import { Typo, typoStyles } from "../Typo/Typo";
+import { Typo, typoStyles } from "../../../../utils/Typo/Typo";
 import { TEAM_MEMBERS } from "./constants";
 import { MemberCard } from "./MemberCard";
 
