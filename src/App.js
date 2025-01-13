@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import { 유호은 } from "./pages/유호은/유호은";
-import 봉재완 from "./pages/봉재완/ProfilePage";
+import 봉재완 from "./pages/봉재완/봉재완";
 
 function App() {
   return (

@@ -123,7 +123,7 @@ const profileData = [
   },
 ];
 
-const ProfilePage = () => {
+const 봉재완 = () => {
   const [selectedProfile, setSelectedProfile] = useState(null);
 
   const handleImageClick = (profile) => {
@@ -173,4 +173,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default 봉재완;
