@@ -1,0 +1,24 @@
+@import "../color.css";
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(372px, auto));
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  background-color: var(--gray900);
+  padding-top: 88px;
+  padding-bottom: 92px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.item {
+  text-align: left;
+}
+
+#contract{
+    display: grid;
+    grid-template-columns: 79px 340px;
+}
