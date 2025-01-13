@@ -1,0 +1,28 @@
+@import "../../../../styles/color.css";
+
+#footer {
+  display: flex;
+  flex-wrap: wrap; /* 화면이 작아지면 열이 줄 바꿈되도록 설정 */
+  justify-content: space-between;
+  width: 100%;
+  padding: 88px 342px;
+  background-color: var(--gray900);
+  color: #ffffff;
+  font-family: pretendard;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 300px;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+}
