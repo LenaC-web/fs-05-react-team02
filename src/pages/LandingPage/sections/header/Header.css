@@ -1,11 +1,10 @@
-@import "../color.css";
+@import "../../../../styles/color.css";
 
 #nav {
   display: flex;
   flex-direction: row-reverse;
 }
 .teamButton {
-  width: 55px;
   height: 40px;
   background-color: var(--gray900);
   margin: 10px 190px 10px;
@@ -13,10 +12,10 @@
 }
 
 .buttonText {
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
-  }
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
 
 #section1 {
   display: flex;

@@ -1,5 +1,5 @@
-import { Typo, typoStyles } from "../Typo/Typo";
-import "./header.css";
+import { Typo, typoStyles } from "../../../../utils/Typo/Typo";
+import "./Header.css";
 
 export function Header() {
   return (
@@ -8,7 +8,7 @@ export function Header() {
         <button className="teamButton" type="button">
           <Typo
             className={`buttonText ${typoStyles.textXlBold}`}
-            content="1팀"
+            content="HOME"
           />
         </button>
       </div>
