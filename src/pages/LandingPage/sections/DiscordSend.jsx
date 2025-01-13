@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../color.css";
+import "../../../styles/color.css";
 
 const Container = {
   display: "flex",

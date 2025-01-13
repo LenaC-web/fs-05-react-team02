@@ -1,0 +1,38 @@
+@import "../../../styles/color.css";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px;
+  border-bottom: 1px solid var(--gray2);
+}
+
+#page-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.title-img {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+}
+
+#user-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#logout-btn {
+  text-align: center;
+  color: #ffffff;
+
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--primary100);
+}
