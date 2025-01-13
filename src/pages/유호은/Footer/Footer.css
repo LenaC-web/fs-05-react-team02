@@ -1,0 +1,20 @@
+@import "../../../styles/color.css";
+
+footer {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-menu {
+  text-align: center;
+  text-decoration: none;
+  color: var(--gray700);
+
+  padding: 8px 20px;
+  border-radius: 70px;
+  background-color: var(--gray300);
+  margin: 0;
+  cursor: pointer;
+}

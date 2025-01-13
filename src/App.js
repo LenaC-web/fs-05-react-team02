@@ -1,7 +1,6 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LandingPage from "./유호은/LandingPage";
-import { 유호은 } from "./유호은/유호은";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import { 유호은 } from "./pages/유호은/유호은";
 
 function App() {
   return (
